@@ -6,4 +6,4 @@ namespace xy;
 require __DIR__ . '/vendor/autoload.php';
 
 //启动
-(new cmdApp())->run();
+(new app(__DIR__))->run('cmd');
