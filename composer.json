@@ -1,0 +1,39 @@
+{
+    "name": "rephp/rephp",
+    "type": "project",
+    "description": "A Php Framework.",
+    "keywords": [
+        "framework",
+        "rephp"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.0|^8.0",
+        "xyphp/framework": "^1.0",
+        "xyphp/libs": "^1.0"
+    },
+    "autoload": {
+        "files": [
+            "src/util/db/helpers.php",
+            "src/util/events/helpers.php"
+        ],
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php cmd project->init"
+        ]
+    }
+}

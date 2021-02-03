@@ -1,0 +1,146 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "05f5e79114967e882b225acf6bca8c96",
+    "packages": [
+        {
+            "name": "psr/container",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/master"
+            },
+            "time": "2017-02-14T16:28:37+00:00"
+        },
+        {
+            "name": "xyphp/framework",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xyphp/framework.git",
+                "reference": "3f8ce31066eb364df3c518670faea1b80d656c6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xyphp/framework/zipball/3f8ce31066eb364df3c518670faea1b80d656c6f",
+                "reference": "3f8ce31066eb364df3c518670faea1b80d656c6f",
+                "shasum": ""
+            },
+            "require": {
+                "psr/container": "^1.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "sam.shi",
+                    "email": "redphp@126.com"
+                }
+            ],
+            "description": "xyphp is a easy php framework",
+            "keywords": [
+                "framework",
+                "php framework",
+                "xyphp"
+            ],
+            "support": {
+                "issues": "https://github.com/xyphp/framework/issues",
+                "source": "https://github.com/xyphp/framework/tree/1.0.4"
+            },
+            "time": "2021-01-28T04:25:16+00:00"
+        },
+        {
+            "name": "xyphp/libs",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xyphp/libs.git",
+                "reference": "384819a552cf7e892d274270829840c80e4d9b0e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xyphp/libs/zipball/384819a552cf7e892d274270829840c80e4d9b0e",
+                "reference": "384819a552cf7e892d274270829840c80e4d9b0e",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "mit"
+            ],
+            "authors": [
+                {
+                    "name": "sam.shi",
+                    "email": "redphp@126.com"
+                }
+            ],
+            "description": "description",
+            "support": {
+                "issues": "https://github.com/xyphp/libs/issues",
+                "source": "https://github.com/xyphp/libs/tree/1.0.1"
+            },
+            "time": "2021-01-22T08:21:45+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.0|^8.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
