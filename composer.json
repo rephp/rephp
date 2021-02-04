@@ -10,7 +10,7 @@
     "require": {
         "php": "^7.0|^8.0",
         "rephp/framework": "^1.0",
-        "rephp/libs": "^1.0"
+        "rephp/lib": "^1.0"
     },
     "autoload": {
         "files": [
