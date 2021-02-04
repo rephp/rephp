@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05f5e79114967e882b225acf6bca8c96",
+    "content-hash": "aacdac17dee41cb51a9f8f994983c66a",
     "packages": [
         {
             "name": "psr/container",
@@ -60,17 +60,17 @@
             "time": "2017-02-14T16:28:37+00:00"
         },
         {
-            "name": "xyphp/framework",
-            "version": "1.0.4",
+            "name": "rephp/framework",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/xyphp/framework.git",
-                "reference": "3f8ce31066eb364df3c518670faea1b80d656c6f"
+                "url": "https://github.com/rephp/framework.git",
+                "reference": "485a6719ff5c0eaf61f0d67bd6fb6c05d9114227"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xyphp/framework/zipball/3f8ce31066eb364df3c518670faea1b80d656c6f",
-                "reference": "3f8ce31066eb364df3c518670faea1b80d656c6f",
+                "url": "https://api.github.com/repos/rephp/framework/zipball/485a6719ff5c0eaf61f0d67bd6fb6c05d9114227",
+                "reference": "485a6719ff5c0eaf61f0d67bd6fb6c05d9114227",
                 "shasum": ""
             },
             "require": {
@@ -84,52 +84,57 @@
             "authors": [
                 {
                     "name": "sam.shi",
-                    "email": "redphp@126.com"
+                    "email": "8464005@qq.com"
                 }
             ],
-            "description": "xyphp is a easy php framework",
+            "description": "rephp is a easy php framework",
             "keywords": [
                 "framework",
                 "php framework",
-                "xyphp"
+                "rephp"
             ],
             "support": {
-                "issues": "https://github.com/xyphp/framework/issues",
-                "source": "https://github.com/xyphp/framework/tree/1.0.4"
+                "issues": "https://github.com/rephp/framework/issues",
+                "source": "https://github.com/rephp/framework/tree/1.0.2"
             },
-            "time": "2021-01-28T04:25:16+00:00"
+            "time": "2021-02-03T09:38:31+00:00"
         },
         {
-            "name": "xyphp/libs",
-            "version": "1.0.1",
+            "name": "rephp/lib",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/xyphp/libs.git",
-                "reference": "384819a552cf7e892d274270829840c80e4d9b0e"
+                "url": "https://github.com/rephp/lib.git",
+                "reference": "bf4b8caf51acfca99b569b6ec51f4891be5bde28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xyphp/libs/zipball/384819a552cf7e892d274270829840c80e4d9b0e",
-                "reference": "384819a552cf7e892d274270829840c80e4d9b0e",
+                "url": "https://api.github.com/repos/rephp/lib/zipball/bf4b8caf51acfca99b569b6ec51f4891be5bde28",
+                "reference": "bf4b8caf51acfca99b569b6ec51f4891be5bde28",
                 "shasum": ""
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "mit"
+                "proprietary"
             ],
             "authors": [
                 {
                     "name": "sam.shi",
-                    "email": "redphp@126.com"
+                    "email": "8464005@qq.com"
                 }
             ],
-            "description": "description",
+            "description": "rephp is a easy php framework, and this is the common lib for rephp",
+            "keywords": [
+                "php framework",
+                "php lib",
+                "rephp"
+            ],
             "support": {
-                "issues": "https://github.com/xyphp/libs/issues",
-                "source": "https://github.com/xyphp/libs/tree/1.0.1"
+                "issues": "https://github.com/rephp/lib/issues",
+                "source": "https://github.com/rephp/lib/tree/1.0.0"
             },
-            "time": "2021-01-22T08:21:45+00:00"
+            "time": "2021-02-04T01:44:53+00:00"
         }
     ],
     "packages-dev": [],
