@@ -10,12 +10,11 @@
     "require": {
         "php": "^7.0|^8.0",
         "rephp/framework": "^1.0",
-        "rephp/lib": "^1.0"
+        "rephp/lib": "^1.0",
+        "noahbuscher/macaw": "dev-master"
     },
     "autoload": {
         "files": [
-            "src/util/db/helpers.php",
-            "src/util/events/helpers.php"
         ],
         "psr-4": {
             "app\\": "app/"
