@@ -112,16 +112,16 @@
         },
         {
             "name": "rephp/framework",
-            "version": "1.0.7",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/framework.git",
-                "reference": "e8292d9cd542e261743434258bb6e0ed3f00bc77"
+                "reference": "35ac0f4afa35fdd5d04df3ff7e0c200e20271eb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/framework/zipball/e8292d9cd542e261743434258bb6e0ed3f00bc77",
-                "reference": "e8292d9cd542e261743434258bb6e0ed3f00bc77",
+                "url": "https://api.github.com/repos/rephp/framework/zipball/35ac0f4afa35fdd5d04df3ff7e0c200e20271eb9",
+                "reference": "35ac0f4afa35fdd5d04df3ff7e0c200e20271eb9",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +131,10 @@
             "autoload": {
                 "psr-4": {
                     "rephp\\framework\\": "./"
-                }
+                },
+                "files": [
+                    "helper/common.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -151,9 +154,9 @@
             ],
             "support": {
                 "issues": "https://github.com/rephp/framework/issues",
-                "source": "https://github.com/rephp/framework/tree/1.0.7"
+                "source": "https://github.com/rephp/framework/tree/1.1.0"
             },
-            "time": "2021-02-08T02:48:06+00:00"
+            "time": "2021-02-08T09:22:56+00:00"
         },
         {
             "name": "rephp/lib",
