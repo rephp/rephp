@@ -7,6 +7,35 @@
     "content-hash": "d3041b876f4c26b286be5abd4f8c2b64",
     "packages": [
         {
+            "name": "millionmile/get_env",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitee.com/millionmile/get_env.git",
+                "reference": "5a1c3e1a8fd98d741668f0ce8fec310952de9c7c"
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MillionMile\\GetEnv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "萬里",
+                    "email": "810185932@qq.com"
+                }
+            ],
+            "time": "2020-10-15T08:29:26+00:00"
+        },
+        {
             "name": "noahbuscher/macaw",
             "version": "dev-master",
             "source": {
@@ -112,19 +141,20 @@
         },
         {
             "name": "rephp/framework",
-            "version": "1.1.0",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/framework.git",
-                "reference": "35ac0f4afa35fdd5d04df3ff7e0c200e20271eb9"
+                "reference": "c38c47582d0178093c668f0c62152cc495b643ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/framework/zipball/35ac0f4afa35fdd5d04df3ff7e0c200e20271eb9",
-                "reference": "35ac0f4afa35fdd5d04df3ff7e0c200e20271eb9",
+                "url": "https://api.github.com/repos/rephp/framework/zipball/c38c47582d0178093c668f0c62152cc495b643ff",
+                "reference": "c38c47582d0178093c668f0c62152cc495b643ff",
                 "shasum": ""
             },
             "require": {
+                "millionmile/get_env": "^1.0",
                 "psr/container": "^1.0"
             },
             "type": "library",
@@ -154,9 +184,9 @@
             ],
             "support": {
                 "issues": "https://github.com/rephp/framework/issues",
-                "source": "https://github.com/rephp/framework/tree/1.1.0"
+                "source": "https://github.com/rephp/framework/tree/1.1.2"
             },
-            "time": "2021-02-08T09:22:56+00:00"
+            "time": "2021-02-09T08:49:53+00:00"
         },
         {
             "name": "rephp/lib",
