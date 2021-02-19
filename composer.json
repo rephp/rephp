@@ -15,8 +15,7 @@
     },
     "autoload": {
         "files": [
-            "route/route.php",
-            "route/api.php"
+
         ],
         "psr-4": {
             "app\\": "app/"
