@@ -8,7 +8,7 @@ class testController{
 
     public function indexAction()
     {
-        echo 'xxxxxxxxxxxxxxxx';
+        echo 'xxxxxxxxxxxxxxxxxxxxxxxxxxx';
     }
     public function testAction($a){
         echo $uri    = parse_url($_SERVER['REQUEST_URI']);
