@@ -4,11 +4,11 @@ namespace app\modules\index\controller;
 
 use app\modules\index\logic\testLogic;
 
-class testController{
+class indexController{
 
     public function indexAction()
     {
-        echo 'xxxxxxxxxxxxxxxx';
+        echo '==========================';
     }
     public function testAction($a){
         echo $uri    = parse_url($_SERVER['REQUEST_URI']);
