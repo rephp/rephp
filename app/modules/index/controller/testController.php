@@ -3,6 +3,7 @@ namespace app\modules\index\controller;
 
 
 use app\modules\index\logic\testLogic;
+use rephp\framework\component\container\container;
 
 class testController{
 
@@ -13,6 +14,7 @@ class testController{
     public function testAction($a){
         echo $uri    = parse_url($_SERVER['REQUEST_URI']);
         var_dump($a);
+        echo '======================';
     }
 
     public function test2Action($a){
@@ -25,7 +27,9 @@ class testController{
         $action     = empty($arr[3]) ? 'index' : $this->filter($arr[3]).'Action';
 
         var_dump($modules,$controller,$action);
-         //var_dump(basename($uri));
+
+        $get = container::getContainer()->get('request')->get;
+         echo '<pre>';print_r($get);
 
     }
 
