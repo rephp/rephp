@@ -142,35 +142,6 @@
             "time": "2021-01-24T12:00:00+00:00"
         },
         {
-            "name": "millionmile/get_env",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://gitee.com/millionmile/get_env.git",
-                "reference": "5a1c3e1a8fd98d741668f0ce8fec310952de9c7c"
-            },
-            "require": {
-                "php": ">=7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MillionMile\\GetEnv\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "萬里",
-                    "email": "810185932@qq.com"
-                }
-            ],
-            "time": "2020-10-15T08:29:26+00:00"
-        },
-        {
             "name": "noahbuscher/macaw",
             "version": "dev-master",
             "source": {
@@ -326,28 +297,30 @@
         },
         {
             "name": "rephp/framework",
-            "version": "1.1.21",
+            "version": "1.1.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/framework.git",
-                "reference": "6befd8572a9ed19bec03927228589b592abeda54"
+                "reference": "8cd5fb49351d0221e9403b5bc1230b30bb09f5af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/framework/zipball/6befd8572a9ed19bec03927228589b592abeda54",
-                "reference": "6befd8572a9ed19bec03927228589b592abeda54",
+                "url": "https://api.github.com/repos/rephp/framework/zipball/8cd5fb49351d0221e9403b5bc1230b30bb09f5af",
+                "reference": "8cd5fb49351d0221e9403b5bc1230b30bb09f5af",
                 "shasum": ""
             },
             "require": {
                 "catfan/medoo": "^1.7",
                 "filp/whoops": "^2.9",
-                "millionmile/get_env": "^1.0",
                 "psr/container": "^1.0"
+            },
+            "require-dev": {
+                "millionmile/get_env": "^1.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "rephp\\framework\\": "./"
+                    "rephp\\": "./"
                 },
                 "files": [
                     "helper/common.php"
@@ -371,9 +344,9 @@
             ],
             "support": {
                 "issues": "https://github.com/rephp/framework/issues",
-                "source": "https://github.com/rephp/framework/tree/1.1.21"
+                "source": "https://github.com/rephp/framework/tree/1.1.29"
             },
-            "time": "2021-02-25T06:03:00+00:00"
+            "time": "2021-03-03T08:06:21+00:00"
         },
         {
             "name": "rephp/lib",

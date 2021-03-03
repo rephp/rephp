@@ -3,7 +3,7 @@ namespace app\modules\index\controller;
 
 
 use app\modules\index\logic\testLogic;
-use rephp\framework\component\container\container;
+use rephp\component\container\container;
 
 class testController{
 
@@ -18,6 +18,8 @@ class testController{
     }
 
     public function test2Action($a){
+        $env = env('CONFIG.CONFIG_PATH2');
+        var_dump($env);
             $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
             echo '<pre>';
         var_dump($uri);
