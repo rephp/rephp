@@ -8,10 +8,9 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^5.3|^7.0|^8.0",
+        "php": ">=5.4.0",
         "rephp/framework": "^1.0",
-        "rephp/lib": "^1.0",
-        "noahbuscher/macaw": "dev-master"
+        "rephp/lib": "^1.0"
     },
     "autoload": {
         "files": [
