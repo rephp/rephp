@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3041b876f4c26b286be5abd4f8c2b64",
+    "content-hash": "2e0ab4d3ea321c500ccd75aa5e2a64c7",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -297,22 +297,25 @@
         },
         {
             "name": "rephp/framework",
-            "version": "1.1.30",
+            "version": "1.1.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/framework.git",
-                "reference": "6a3f31223ce840ea2566891b2fbe048b6cb316d6"
+                "reference": "51ec6899a1e79f41e12d11d345f470c7bd4bd8d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/framework/zipball/6a3f31223ce840ea2566891b2fbe048b6cb316d6",
-                "reference": "6a3f31223ce840ea2566891b2fbe048b6cb316d6",
+                "url": "https://api.github.com/repos/rephp/framework/zipball/51ec6899a1e79f41e12d11d345f470c7bd4bd8d8",
+                "reference": "51ec6899a1e79f41e12d11d345f470c7bd4bd8d8",
                 "shasum": ""
             },
             "require": {
                 "catfan/medoo": "^1.7",
                 "filp/whoops": "^2.9",
-                "psr/container": "^1.0"
+                "noahbuscher/macaw": "dev-master",
+                "php": ">=5.4.0",
+                "psr/container": "^1.0",
+                "rephp/rephp-debugbar": "^1.0"
             },
             "require-dev": {
                 "millionmile/get_env": "^1.0"
@@ -344,9 +347,9 @@
             ],
             "support": {
                 "issues": "https://github.com/rephp/framework/issues",
-                "source": "https://github.com/rephp/framework/tree/1.1.30"
+                "source": "https://github.com/rephp/framework/tree/1.1.33"
             },
-            "time": "2021-03-03T08:19:42+00:00"
+            "time": "2021-03-05T09:48:11+00:00"
         },
         {
             "name": "rephp/lib",
@@ -389,18 +392,56 @@
                 "source": "https://github.com/rephp/lib/tree/1.0.1"
             },
             "time": "2021-02-08T02:26:42+00:00"
+        },
+        {
+            "name": "rephp/rephp-debugbar",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rephp/rephp-debugbar.git",
+                "reference": "29cb1b9ba8c52f3fa4b5aa3c50a69a4f183ae870"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rephp/rephp-debugbar/zipball/29cb1b9ba8c52f3fa4b5aa3c50a69a4f183ae870",
+                "reference": "29cb1b9ba8c52f3fa4b5aa3c50a69a4f183ae870",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "rephp\\debugbar\\": ".\\"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "sam.shi",
+                    "email": "32320811@qq.com"
+                }
+            ],
+            "description": "rephp debugbar",
+            "support": {
+                "issues": "https://github.com/rephp/rephp-debugbar/issues",
+                "source": "https://github.com/rephp/rephp-debugbar/tree/1.0.2"
+            },
+            "time": "2021-03-05T09:44:52+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "noahbuscher/macaw": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.0|^8.0"
+        "php": ">=5.4.0"
     },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"

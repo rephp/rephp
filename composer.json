@@ -9,8 +9,8 @@
     "license": "MIT",
     "require": {
         "php": ">=5.4.0",
-        "rephp/framework": "^1.0",
-        "rephp/lib": "^1.0"
+        "rephp/lib": "^1.0",
+        "rephp/framework": "^1.1"
     },
     "autoload": {
         "files": [
