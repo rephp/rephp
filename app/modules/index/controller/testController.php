@@ -18,10 +18,10 @@ class testController{
     }
 
     public function test2Action($a){
-        $env = env('CONFIG.CONFIG_PATH2');
-        var_dump($env);
-            $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-            echo '<pre>';
+        echo 'ddddddddddddddddd';
+        $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        echo '<img src="/static/test.jpg"><img src="/static/test.css"><img src="/test.ico">';
+        echo '<pre>';
         var_dump($uri);
         $arr = explode('/', $uri);
         $modules    = empty($arr[1]) ? 'index' : $this->filter($arr[1]);

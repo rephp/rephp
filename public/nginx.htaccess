@@ -1,19 +1,18 @@
-if (-e $request_filename){
-	set $rule_0 1;
+if (!-f $request_filename){
+    set $rule_0 1$rule_0;
 }
-if ($request_filename ~ "-l"){
-	set $rule_0 1;
+if ($uri !~ "^/css"){
+    set $rule_0 2$rule_0;
 }
-if (-f $request_filename){
-	set $rule_0 1;
+if ($uri !~ "^/js"){
+    set $rule_0 3$rule_0;
 }
-if (-d $request_filename){
-	set $rule_0 1;
+if ($uri !~ "^/images"){
+    set $rule_0 4$rule_0;
 }
-if ($uri ~ "^.*(.css|.js|.gif|.png|.jpg|.jpeg|.ico|.swf)$"){
-	set $rule_0 1;
+if ($uri !~ "^.*(\.css|\.js|\.gif|\.png|\.jpg|\.jpeg|\.xml)"){
+    set $rule_0 5$rule_0;
 }
-if ($rule_0 = "1"){
-#ignored: "-" thing used or unknown variable in regex/rew 
+if ($rule_0 = "54321"){
+ rewrite ^/(.*)$ index.php$1 last;
 }
-	rewrite ^/(.*)$ /index.php?$1 last;
