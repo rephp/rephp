@@ -1,18 +1,6 @@
-if (!-f $request_filename){
-    set $rule_0 1$rule_0;
-}
-if ($uri !~ "^/css"){
-    set $rule_0 2$rule_0;
-}
-if ($uri !~ "^/js"){
-    set $rule_0 3$rule_0;
-}
-if ($uri !~ "^/images"){
-    set $rule_0 4$rule_0;
-}
-if ($uri !~ "^.*(\.css|\.js|\.gif|\.png|\.jpg|\.jpeg|\.xml)"){
-    set $rule_0 5$rule_0;
-}
-if ($rule_0 = "54321"){
- rewrite ^/(.*)$ index.php$1 last;
+
+
+if (!-e $request_filename) {
+rewrite ^/(?!\.ico|\.jpg|\.css|\.jpeg|\.js|\.png|\.gif|\.webp|\.mp4)(.*)$ /index.php/$1 last;
+break;
 }

@@ -26,10 +26,9 @@ RewriteRule ^(.*)$ index.php?$1 [QSA,L]
 .htaccess(Nginx):
 
 ```
-rewrite ^/(.*)/$ /$1 redirect;
-
-if (!-e $request_filename){
-	rewrite ^(.*)$ /index.php break;
+if (!-e $request_filename) {
+rewrite ^(.*)$ /index.php$1 last;
+break;
 }
 
 ```
