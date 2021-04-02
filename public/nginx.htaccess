@@ -1,6 +1,19 @@
-
-
-if (!-e $request_filename) {
-rewrite ^/(?!\.ico|\.jpg|\.css|\.jpeg|\.js|\.png|\.gif|\.webp|\.mp4)(.*)$ /index.php/$1 last;
-break;
+if (-e $request_filename){
+	set $rule_0 1;
 }
+if ($request_filename ~ "-l"){
+	set $rule_0 1;
+}
+if (-f $request_filename){
+	set $rule_0 1;
+}
+if (-d $request_filename){
+	set $rule_0 1;
+}
+if ($uri ~ "^.*(.css|.js|.gif|.png|.jpg|.jpeg|.ico|.swf)$"){
+	set $rule_0 1;
+}
+if ($rule_0 = "1"){
+#ignored: "-" thing used or unknown variable in regex/rew 
+}
+	rewrite ^/(.*)$ /index.php?$1 last;
