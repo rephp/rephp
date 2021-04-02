@@ -72,16 +72,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.9.2",
+            "version": "2.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "df7933820090489623ce0be5e85c7e693638e536"
+                "reference": "d501fd2658d55491a2295ff600ae5978eaad7403"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/df7933820090489623ce0be5e85c7e693638e536",
-                "reference": "df7933820090489623ce0be5e85c7e693638e536",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/d501fd2658d55491a2295ff600ae5978eaad7403",
+                "reference": "d501fd2658d55491a2295ff600ae5978eaad7403",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +131,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.9.2"
+                "source": "https://github.com/filp/whoops/tree/2.12.0"
             },
             "funding": [
                 {
@@ -139,7 +139,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-01-24T12:00:00+00:00"
+            "time": "2021-03-30T12:00:00+00:00"
         },
         {
             "name": "noahbuscher/macaw",
@@ -292,23 +292,23 @@
         },
         {
             "name": "rephp/framework",
-            "version": "1.1.33",
+            "version": "1.1.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/framework.git",
-                "reference": "51ec6899a1e79f41e12d11d345f470c7bd4bd8d8"
+                "reference": "476537d5627bf937423d95d7be42aeda8c436b4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/framework/zipball/51ec6899a1e79f41e12d11d345f470c7bd4bd8d8",
-                "reference": "51ec6899a1e79f41e12d11d345f470c7bd4bd8d8",
+                "url": "https://api.github.com/repos/rephp/framework/zipball/476537d5627bf937423d95d7be42aeda8c436b4c",
+                "reference": "476537d5627bf937423d95d7be42aeda8c436b4c",
                 "shasum": ""
             },
             "require": {
                 "catfan/medoo": "^1.7",
                 "filp/whoops": "^2.9",
                 "noahbuscher/macaw": "dev-master",
-                "php": ">=5.4.0",
+                "php": ">=7.2.0",
                 "psr/container": "^1.0",
                 "rephp/rephp-debugbar": "^1.0"
             },
@@ -342,9 +342,9 @@
             ],
             "support": {
                 "issues": "https://github.com/rephp/framework/issues",
-                "source": "https://github.com/rephp/framework/tree/1.1.33"
+                "source": "https://github.com/rephp/framework/tree/1.1.34"
             },
-            "time": "2021-03-05T09:48:11+00:00"
+            "time": "2021-04-02T04:04:09+00:00"
         },
         {
             "name": "rephp/lib",
@@ -390,16 +390,16 @@
         },
         {
             "name": "rephp/rephp-debugbar",
-            "version": "1.0.3",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/rephp-debugbar.git",
-                "reference": "f2ea23cc184638091ae499bcff39037ebf88a3e3"
+                "reference": "3eed62f31765656dba6cf2aa28e9e227423e155e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/rephp-debugbar/zipball/f2ea23cc184638091ae499bcff39037ebf88a3e3",
-                "reference": "f2ea23cc184638091ae499bcff39037ebf88a3e3",
+                "url": "https://api.github.com/repos/rephp/rephp-debugbar/zipball/3eed62f31765656dba6cf2aa28e9e227423e155e",
+                "reference": "3eed62f31765656dba6cf2aa28e9e227423e155e",
                 "shasum": ""
             },
             "require": {
@@ -408,7 +408,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "rephp\\debugbar\\": ".\\"
+                    "rephp\\debugbar\\": ".\\src\\"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -424,9 +424,9 @@
             "description": "rephp debugbar",
             "support": {
                 "issues": "https://github.com/rephp/rephp-debugbar/issues",
-                "source": "https://github.com/rephp/rephp-debugbar/tree/1.0.3"
+                "source": "https://github.com/rephp/rephp-debugbar/tree/1.1.1"
             },
-            "time": "2021-03-07T11:49:17+00:00"
+            "time": "2021-04-02T09:51:17+00:00"
         }
     ],
     "packages-dev": [],
