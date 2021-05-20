@@ -6,10 +6,14 @@ use app\modules\index\baseController;
 
 class indexController extends baseController {
 
+    public $layout = 'index';
+
     public function indexAction()
     {
         echo '==========================';
         echo $this->model('demo')->test2();
+        $res =  $this->display();
+        var_dump($res);
     }
     public function testAction($a){
         echo $uri    = parse_url($_SERVER['REQUEST_URI']);
