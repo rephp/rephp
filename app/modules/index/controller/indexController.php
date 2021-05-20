@@ -2,13 +2,14 @@
 namespace app\modules\index\controller;
 
 
-use app\modules\index\logic\testLogic;
+use app\modules\index\baseController;
 
-class indexController{
+class indexController extends baseController {
 
     public function indexAction()
     {
         echo '==========================';
+        echo $this->model('demo')->test2();
     }
     public function testAction($a){
         echo $uri    = parse_url($_SERVER['REQUEST_URI']);
