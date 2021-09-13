@@ -390,16 +390,16 @@
         },
         {
             "name": "rephp/redb",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/redb.git",
-                "reference": "1695d2b199cef9dcfc86a5288c2361973e62d9b9"
+                "reference": "f7ddc9fd6f43e47aeaa580fa6346eabc40936480"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/redb/zipball/1695d2b199cef9dcfc86a5288c2361973e62d9b9",
-                "reference": "1695d2b199cef9dcfc86a5288c2361973e62d9b9",
+                "url": "https://api.github.com/repos/rephp/redb/zipball/f7ddc9fd6f43e47aeaa580fa6346eabc40936480",
+                "reference": "f7ddc9fd6f43e47aeaa580fa6346eabc40936480",
                 "shasum": ""
             },
             "require": {
@@ -424,9 +424,9 @@
             "description": "redb是一款php的mysql数据库操作类库",
             "support": {
                 "issues": "https://github.com/rephp/redb/issues",
-                "source": "https://github.com/rephp/redb/tree/1.0.2"
+                "source": "https://github.com/rephp/redb/tree/1.0.3"
             },
-            "time": "2021-09-13T09:03:52+00:00"
+            "time": "2021-09-13T11:58:20+00:00"
         },
         {
             "name": "rephp/rephp-debugbar",
