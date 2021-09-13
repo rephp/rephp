@@ -72,16 +72,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.12.1",
+            "version": "2.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "c13c0be93cff50f88bbd70827d993026821914dd"
+                "reference": "15ead64e9828f0fc90932114429c4f7923570cb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/c13c0be93cff50f88bbd70827d993026821914dd",
-                "reference": "c13c0be93cff50f88bbd70827d993026821914dd",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/15ead64e9828f0fc90932114429c4f7923570cb1",
+                "reference": "15ead64e9828f0fc90932114429c4f7923570cb1",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +131,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.12.1"
+                "source": "https://github.com/filp/whoops/tree/2.14.1"
             },
             "funding": [
                 {
@@ -139,7 +139,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-25T12:00:00+00:00"
+            "time": "2021-08-29T12:00:00+00:00"
         },
         {
             "name": "noahbuscher/macaw",
@@ -194,27 +194,22 @@
         },
         {
             "name": "psr/container",
-            "version": "1.0.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/container.git",
-                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
+                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
-                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/8622567409010282b7aeebe4bb841fe98b58dcaf",
+                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=7.2.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Psr\\Container\\": "src/"
@@ -227,7 +222,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Common Container Interface (PHP FIG PSR-11)",
@@ -241,9 +236,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-fig/container/issues",
-                "source": "https://github.com/php-fig/container/tree/master"
+                "source": "https://github.com/php-fig/container/tree/1.1.1"
             },
-            "time": "2017-02-14T16:28:37+00:00"
+            "time": "2021-03-05T17:36:06+00:00"
         },
         {
             "name": "psr/log",
@@ -297,16 +292,16 @@
         },
         {
             "name": "rephp/framework",
-            "version": "1.1.40",
+            "version": "1.1.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/framework.git",
-                "reference": "25c28080276e8f4a04e646c4f4d097f1f47d1c4f"
+                "reference": "64f4ba5a4bd6c3980fab3cdf72f228da5ede4ed0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/framework/zipball/25c28080276e8f4a04e646c4f4d097f1f47d1c4f",
-                "reference": "25c28080276e8f4a04e646c4f4d097f1f47d1c4f",
+                "url": "https://api.github.com/repos/rephp/framework/zipball/64f4ba5a4bd6c3980fab3cdf72f228da5ede4ed0",
+                "reference": "64f4ba5a4bd6c3980fab3cdf72f228da5ede4ed0",
                 "shasum": ""
             },
             "require": {
@@ -314,6 +309,7 @@
                 "filp/whoops": "^2.9",
                 "noahbuscher/macaw": "dev-master",
                 "psr/container": "^1.0",
+                "rephp/redb": "^1.0",
                 "rephp/rephp-debugbar": "^1.0"
             },
             "require-dev": {
@@ -346,9 +342,9 @@
             ],
             "support": {
                 "issues": "https://github.com/rephp/framework/issues",
-                "source": "https://github.com/rephp/framework/tree/1.1.40"
+                "source": "https://github.com/rephp/framework/tree/1.1.41"
             },
-            "time": "2021-05-19T10:30:06+00:00"
+            "time": "2021-09-13T08:51:35+00:00"
         },
         {
             "name": "rephp/lib",
@@ -391,6 +387,46 @@
                 "source": "https://github.com/rephp/lib/tree/1.0.1"
             },
             "time": "2021-02-08T02:26:42+00:00"
+        },
+        {
+            "name": "rephp/redb",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rephp/redb.git",
+                "reference": "e7aa7fa68d7098c74b60500d1c539e6274a9d677"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rephp/redb/zipball/e7aa7fa68d7098c74b60500d1c539e6274a9d677",
+                "reference": "e7aa7fa68d7098c74b60500d1c539e6274a9d677",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "rephp\\redb\\": ".\\src\\"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "sam.shi",
+                    "email": "32320811@qq.com"
+                }
+            ],
+            "description": "redb是一款php的mysql数据库操作类库",
+            "support": {
+                "issues": "https://github.com/rephp/redb/issues",
+                "source": "https://github.com/rephp/redb/tree/1.0.1"
+            },
+            "time": "2021-09-13T08:46:21+00:00"
         },
         {
             "name": "rephp/rephp-debugbar",
