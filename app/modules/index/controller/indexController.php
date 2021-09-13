@@ -11,7 +11,8 @@ class indexController extends baseController {
     public function indexAction()
     {
         echo '==========================';
-        echo $this->model('demo')->test2();
+        $res = $this->model('demo')->where('ttile', 1,  '>=')->page(1)->limit(2)->all();
+        print_r($res);
         $res =  $this->display();
         var_dump($res);
     }

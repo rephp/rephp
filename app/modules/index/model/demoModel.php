@@ -5,7 +5,7 @@ use \rephp\core\model;
 
 class demoModel extends model
 {
-    public $table = 'test2';
+    public $table = 'test';
 
     public function test()
     {
