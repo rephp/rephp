@@ -292,16 +292,16 @@
         },
         {
             "name": "rephp/framework",
-            "version": "1.1.42",
+            "version": "1.1.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/framework.git",
-                "reference": "b218ba636925dc64517486ecde4817e80303265e"
+                "reference": "4860a150675886f4dcafcc5f3e287d1141159c94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/framework/zipball/b218ba636925dc64517486ecde4817e80303265e",
-                "reference": "b218ba636925dc64517486ecde4817e80303265e",
+                "url": "https://api.github.com/repos/rephp/framework/zipball/4860a150675886f4dcafcc5f3e287d1141159c94",
+                "reference": "4860a150675886f4dcafcc5f3e287d1141159c94",
                 "shasum": ""
             },
             "require": {
@@ -342,9 +342,9 @@
             ],
             "support": {
                 "issues": "https://github.com/rephp/framework/issues",
-                "source": "https://github.com/rephp/framework/tree/1.1.42"
+                "source": "https://github.com/rephp/framework/tree/1.1.44"
             },
-            "time": "2021-09-13T09:10:55+00:00"
+            "time": "2021-09-15T07:58:25+00:00"
         },
         {
             "name": "rephp/lib",
@@ -390,16 +390,16 @@
         },
         {
             "name": "rephp/redb",
-            "version": "1.0.3",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/redb.git",
-                "reference": "f7ddc9fd6f43e47aeaa580fa6346eabc40936480"
+                "reference": "ab467247b80366a5d7574bdc8cf57d8623a52523"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/redb/zipball/f7ddc9fd6f43e47aeaa580fa6346eabc40936480",
-                "reference": "f7ddc9fd6f43e47aeaa580fa6346eabc40936480",
+                "url": "https://api.github.com/repos/rephp/redb/zipball/ab467247b80366a5d7574bdc8cf57d8623a52523",
+                "reference": "ab467247b80366a5d7574bdc8cf57d8623a52523",
                 "shasum": ""
             },
             "require": {
@@ -424,9 +424,9 @@
             "description": "redb是一款php的mysql数据库操作类库",
             "support": {
                 "issues": "https://github.com/rephp/redb/issues",
-                "source": "https://github.com/rephp/redb/tree/1.0.3"
+                "source": "https://github.com/rephp/redb/tree/1.0.6"
             },
-            "time": "2021-09-13T11:58:20+00:00"
+            "time": "2021-09-15T07:56:51+00:00"
         },
         {
             "name": "rephp/rephp-debugbar",

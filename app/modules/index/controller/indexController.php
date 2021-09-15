@@ -3,6 +3,7 @@ namespace app\modules\index\controller;
 
 
 use app\modules\index\baseController;
+use app\modules\index\model\demoModel;
 
 class indexController extends baseController {
 
@@ -11,7 +12,8 @@ class indexController extends baseController {
     public function indexAction()
     {
         echo '==========================';
-        $res = $this->model('demo')->where('ttile', 1,  '>=')->page(1)->limit(2)->all();
+        $res = demoModel::db()->where('ttile', 'xxx')->whereOr()->whereLeftBracket()->where('ttile', '版本包')->whereRightBracket()->page(1)->limit(2)->fetch();
+        var_dump($this->model('demo')->getSql()) ;
         print_r($res);
         $res =  $this->display();
         var_dump($res);

@@ -5,7 +5,8 @@ use \rephp\core\model;
 
 class demoModel extends model
 {
-    public $table = 'test';
+    //protected $db = 'default';
+    protected $table = 'test';
 
     public function test()
     {
