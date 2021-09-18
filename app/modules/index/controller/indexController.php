@@ -12,9 +12,16 @@ class indexController extends baseController {
     public function indexAction()
     {
         echo '==========================';
-        $res = demoModel::db()->where('ttile', 'xxx')->whereOr()->whereLeftBracket()->where('ttile', '版本包')->whereRightBracket()->page(1)->limit(2)->fetch();
+        //var_dump(demoModel::db());exit;
+        $res = demoModel::db()->where('ttile', 'xxx')
+                              ->whereOr()
+                              ->whereLeftBracket()
+                              ->where('ttile', '版本包')
+                              ->whereRightBracket()
+                              ->page(1)->limit(2)->fetch();
         var_dump($this->model('demo')->getSql()) ;
         print_r($res);
+
         $res =  $this->display();
         var_dump($res);
     }
