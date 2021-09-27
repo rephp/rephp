@@ -72,16 +72,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.14.1",
+            "version": "2.14.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "15ead64e9828f0fc90932114429c4f7923570cb1"
+                "reference": "89584ce67dd32307f1063cc43846674f4679feda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/15ead64e9828f0fc90932114429c4f7923570cb1",
-                "reference": "15ead64e9828f0fc90932114429c4f7923570cb1",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/89584ce67dd32307f1063cc43846674f4679feda",
+                "reference": "89584ce67dd32307f1063cc43846674f4679feda",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +131,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.14.1"
+                "source": "https://github.com/filp/whoops/tree/2.14.3"
             },
             "funding": [
                 {
@@ -139,7 +139,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-08-29T12:00:00+00:00"
+            "time": "2021-09-19T12:00:00+00:00"
         },
         {
             "name": "noahbuscher/macaw",
@@ -390,16 +390,16 @@
         },
         {
             "name": "rephp/redb",
-            "version": "1.1.11",
+            "version": "1.1.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/redb.git",
-                "reference": "55ae59b5cb17a0d7facefd584e825ba543bc5eeb"
+                "reference": "c032064cb7e55f1964cec5d6716e4d63045ae995"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/redb/zipball/55ae59b5cb17a0d7facefd584e825ba543bc5eeb",
-                "reference": "55ae59b5cb17a0d7facefd584e825ba543bc5eeb",
+                "url": "https://api.github.com/repos/rephp/redb/zipball/c032064cb7e55f1964cec5d6716e4d63045ae995",
+                "reference": "c032064cb7e55f1964cec5d6716e4d63045ae995",
                 "shasum": ""
             },
             "require": {
@@ -408,7 +408,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "rephp\\redb\\": ".\\src\\"
+                    "rephp\\redb\\": "./src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -424,22 +424,22 @@
             "description": "redb是一款php的mysql数据库操作类库",
             "support": {
                 "issues": "https://github.com/rephp/redb/issues",
-                "source": "https://github.com/rephp/redb/tree/1.1.11"
+                "source": "https://github.com/rephp/redb/tree/1.1.13"
             },
-            "time": "2021-09-18T04:22:14+00:00"
+            "time": "2021-09-25T08:08:23+00:00"
         },
         {
             "name": "rephp/rephp-debugbar",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/rephp-debugbar.git",
-                "reference": "d1e7f7b74f8155029758ab82c226beeae7726ccf"
+                "reference": "3220508153b206cf1b12372fa853e6b7ec60022a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/rephp-debugbar/zipball/d1e7f7b74f8155029758ab82c226beeae7726ccf",
-                "reference": "d1e7f7b74f8155029758ab82c226beeae7726ccf",
+                "url": "https://api.github.com/repos/rephp/rephp-debugbar/zipball/3220508153b206cf1b12372fa853e6b7ec60022a",
+                "reference": "3220508153b206cf1b12372fa853e6b7ec60022a",
                 "shasum": ""
             },
             "require": {
@@ -448,7 +448,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "rephp\\debugbar\\": ".\\src\\"
+                    "rephp\\debugbar\\": "./src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -464,9 +464,9 @@
             "description": "rephp debugbar",
             "support": {
                 "issues": "https://github.com/rephp/rephp-debugbar/issues",
-                "source": "https://github.com/rephp/rephp-debugbar/tree/1.1.5"
+                "source": "https://github.com/rephp/rephp-debugbar/tree/1.1.6"
             },
-            "time": "2021-04-08T03:23:34+00:00"
+            "time": "2021-09-25T08:09:43+00:00"
         }
     ],
     "packages-dev": [],
