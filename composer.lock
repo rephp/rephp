@@ -291,17 +291,59 @@
             "time": "2021-05-03T11:20:27+00:00"
         },
         {
-            "name": "rephp/framework",
-            "version": "1.1.46",
+            "name": "rephp/cmd-output",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/rephp/framework.git",
-                "reference": "a3836d3ddd2cc604488952e592038e5fef90577d"
+                "url": "https://github.com/rephp/cmd-output.git",
+                "reference": "a4df82476dfe7349e1cc6f6757c79f1774a22694"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/framework/zipball/a3836d3ddd2cc604488952e592038e5fef90577d",
-                "reference": "a3836d3ddd2cc604488952e592038e5fef90577d",
+                "url": "https://api.github.com/repos/rephp/cmd-output/zipball/a4df82476dfe7349e1cc6f6757c79f1774a22694",
+                "reference": "a4df82476dfe7349e1cc6f6757c79f1774a22694",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "rephp\\output\\": "./src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "sam.shi",
+                    "email": "8464005@qq.com"
+                }
+            ],
+            "description": "可以比较优雅地在命令行模式下输出内容到console中",
+            "keywords": [
+                "output",
+                "php command output",
+                "php console output"
+            ],
+            "support": {
+                "issues": "https://github.com/rephp/cmd-output/issues",
+                "source": "https://github.com/rephp/cmd-output/tree/1.0.1"
+            },
+            "time": "2021-09-29T12:28:27+00:00"
+        },
+        {
+            "name": "rephp/framework",
+            "version": "1.1.47",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rephp/framework.git",
+                "reference": "ef85aaa13064e84a0fc63dcbe6f3fc1a662044a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rephp/framework/zipball/ef85aaa13064e84a0fc63dcbe6f3fc1a662044a5",
+                "reference": "ef85aaa13064e84a0fc63dcbe6f3fc1a662044a5",
                 "shasum": ""
             },
             "require": {
@@ -309,6 +351,7 @@
                 "filp/whoops": "^2.9",
                 "noahbuscher/macaw": "dev-master",
                 "psr/container": "^1.0",
+                "rephp/cmd-output": "^1.0",
                 "rephp/redb": "^1.0",
                 "rephp/rephp-debugbar": "^1.0"
             },
@@ -326,7 +369,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "proprietary"
+                "MIT"
             ],
             "authors": [
                 {
@@ -342,9 +385,9 @@
             ],
             "support": {
                 "issues": "https://github.com/rephp/framework/issues",
-                "source": "https://github.com/rephp/framework/tree/1.1.46"
+                "source": "https://github.com/rephp/framework/tree/1.1.47"
             },
-            "time": "2021-09-18T04:05:16+00:00"
+            "time": "2021-09-30T10:28:20+00:00"
         },
         {
             "name": "rephp/lib",

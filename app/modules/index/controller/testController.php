@@ -9,10 +9,11 @@ class testController{
 
     public function indexAction()
     {
-        echo 'xxxxxxxxxxxxxxxxxxxxxxxxxxx';
+        echo 'xxx-xxxxxxxxxxxxxxxxxxxxxxxx---';
     }
     public function testAction($a){
-        echo $uri    = parse_url($_SERVER['REQUEST_URI']);
+         $uri    = parse_url($_SERVER['REQUEST_URI']);
+         var_dump($uri);
         var_dump($a);
         echo '======================';
     }
