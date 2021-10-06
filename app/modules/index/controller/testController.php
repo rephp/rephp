@@ -18,7 +18,7 @@ class testController{
         echo '======================';
     }
 
-    public function test2Action($a){
+    public function test2Action(){
         echo 'ddddddddddddddddd';
         $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         echo '<img src="/static/test.jpg"><img src="/static/test.css"><img src="/test.ico">';
