@@ -11,10 +11,8 @@ class testController{
     {
         echo 'xxx-xxxxxxxxxxxxxxxxxxxxxxxx---';
     }
-    public function testAction($a){
+    public function testAction(){
          $uri    = parse_url($_SERVER['REQUEST_URI']);
-         var_dump($uri);
-        var_dump($a);
         echo '======================';
     }
 
