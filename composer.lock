@@ -334,16 +334,16 @@
         },
         {
             "name": "rephp/framework",
-            "version": "1.1.49",
+            "version": "1.1.52",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/framework.git",
-                "reference": "90ac33b027846f32194518d3640f4fcd76f0f8c5"
+                "reference": "be7c5c2119d756d93e500368fd90352ed5d56400"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/framework/zipball/90ac33b027846f32194518d3640f4fcd76f0f8c5",
-                "reference": "90ac33b027846f32194518d3640f4fcd76f0f8c5",
+                "url": "https://api.github.com/repos/rephp/framework/zipball/be7c5c2119d756d93e500368fd90352ed5d56400",
+                "reference": "be7c5c2119d756d93e500368fd90352ed5d56400",
                 "shasum": ""
             },
             "require": {
@@ -361,10 +361,10 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "rephp\\": "./"
+                    "rephp\\": "./src/"
                 },
                 "files": [
-                    "helper/common.php"
+                    "./src/helper/common.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -385,9 +385,9 @@
             ],
             "support": {
                 "issues": "https://github.com/rephp/framework/issues",
-                "source": "https://github.com/rephp/framework/tree/1.1.49"
+                "source": "https://github.com/rephp/framework/tree/1.1.52"
             },
-            "time": "2021-10-06T02:41:19+00:00"
+            "time": "2021-10-07T08:55:36+00:00"
         },
         {
             "name": "rephp/lib",
@@ -433,16 +433,16 @@
         },
         {
             "name": "rephp/redb",
-            "version": "1.1.13",
+            "version": "1.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/redb.git",
-                "reference": "c032064cb7e55f1964cec5d6716e4d63045ae995"
+                "reference": "5723dc72e2a68f294a01543cb72b18f2ab3548fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/redb/zipball/c032064cb7e55f1964cec5d6716e4d63045ae995",
-                "reference": "c032064cb7e55f1964cec5d6716e4d63045ae995",
+                "url": "https://api.github.com/repos/rephp/redb/zipball/5723dc72e2a68f294a01543cb72b18f2ab3548fc",
+                "reference": "5723dc72e2a68f294a01543cb72b18f2ab3548fc",
                 "shasum": ""
             },
             "require": {
@@ -467,22 +467,22 @@
             "description": "redb是一款php的mysql数据库操作类库",
             "support": {
                 "issues": "https://github.com/rephp/redb/issues",
-                "source": "https://github.com/rephp/redb/tree/1.1.13"
+                "source": "https://github.com/rephp/redb/tree/1.1.14"
             },
-            "time": "2021-09-25T08:08:23+00:00"
+            "time": "2021-10-08T03:35:17+00:00"
         },
         {
             "name": "rephp/rephp-debugbar",
-            "version": "1.1.8",
+            "version": "1.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/rephp-debugbar.git",
-                "reference": "c4193c5d0c5d5165da658dc98ade845574e5440b"
+                "reference": "755860d952cb626e4d63fd2ae50c1e138bf11d36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/rephp-debugbar/zipball/c4193c5d0c5d5165da658dc98ade845574e5440b",
-                "reference": "c4193c5d0c5d5165da658dc98ade845574e5440b",
+                "url": "https://api.github.com/repos/rephp/rephp-debugbar/zipball/755860d952cb626e4d63fd2ae50c1e138bf11d36",
+                "reference": "755860d952cb626e4d63fd2ae50c1e138bf11d36",
                 "shasum": ""
             },
             "require": {
@@ -507,9 +507,9 @@
             "description": "rephp debugbar",
             "support": {
                 "issues": "https://github.com/rephp/rephp-debugbar/issues",
-                "source": "https://github.com/rephp/rephp-debugbar/tree/1.1.8"
+                "source": "https://github.com/rephp/rephp-debugbar/tree/1.1.9"
             },
-            "time": "2021-10-06T08:02:15+00:00"
+            "time": "2021-10-08T04:12:53+00:00"
         }
     ],
     "packages-dev": [],

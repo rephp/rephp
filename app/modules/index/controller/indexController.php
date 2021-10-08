@@ -4,6 +4,7 @@ namespace app\modules\index\controller;
 
 use app\modules\index\baseController;
 use app\modules\index\model\demoModel;
+use app\modules\index\model\testModel;
 
 class indexController extends baseController {
 
@@ -13,14 +14,12 @@ class indexController extends baseController {
     {
         echo '==========================';
         //var_dump(demoModel::db());exit;
-        $res = demoModel::db()->where('ttile', 'xxx')
-                              ->whereOr()
-                              ->whereLeftBracket()
-                              ->where('ttile', '版本包')
-                              ->whereRightBracket()
-                              ->page(1)->limit(2)->fetch();
-        var_dump($this->model('demo')->getSql()) ;
-        print_r($res);
+        $res = demoModel::db()->where('ttile', '版本包')
+                              ->fetch();
+        $res2 = testModel::db()->where('ttile', 'test')
+                        ->all();
+        //var_dump($this->model('demo')->getSql()) ;
+        var_dump($res,$res2);exit;
 
         $res =  $this->display();
         var_dump($res);
