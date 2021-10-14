@@ -13,7 +13,7 @@ if (-d $request_filename){
 if ($uri ~ "^.*(.css|.js|.gif|.png|.jpg|.jpeg|.ico|.swf)$"){
 	set $rule_0 1;
 }
-if ($rule_0 = "1"){
-#ignored: "-" thing used or unknown variable in regex/rew 
+if ($rule_0 != "1"){
+    rewrite ^/(.*)$ /index.php?$1 last;
 }
-	rewrite ^/(.*)$ /index.php?$1 last;
+
