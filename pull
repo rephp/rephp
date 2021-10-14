@@ -1,0 +1,6 @@
+#!/bin/bash
+SHELL_FOLDER=$(dirname $(readlink -f "$0"))
+cd $SHELL_FOLDER
+git pull
+time1=$(date)
+echo $time1 >> $SHELL_FOLDER/runtime/log/pull.log

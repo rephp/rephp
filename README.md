@@ -4,6 +4,11 @@ php >= 7.2
 
 服务器配置
 
+定时器新增配置可以实现git自动pull
+*/1 * * * * /usr/bin/sh {你的项目路径}/pull
+* */72 * * * rm -rf {你的项目路径}/runtime/log/pull.log
+
+
 ````
 
 .htaccess(Apache):
