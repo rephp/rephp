@@ -16,7 +16,7 @@ class indexController extends baseController {
         //var_dump(demoModel::db());exit;
         $res = demoModel::db()->where('ttile', '版本包')
                               ->fetch();
-        $res2 = testModel::db()->where('ttile', 'test')
+        $res2 = testModel::db()->where('ttile3', 'test')
                         ->all();
         //var_dump($this->model('demo')->getSql()) ;
         var_dump($res,$res2);exit;
