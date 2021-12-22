@@ -1,5 +1,6 @@
 <?php
 use rephp\app;
+
 //加载composer自动加载类
 require dirname(__DIR__) . '/vendor/autoload.php';
 

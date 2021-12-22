@@ -1,12 +1,12 @@
 <?php
 namespace app\modules\index\controller;
 
-
 use app\modules\index\baseController;
 use app\modules\index\model\demoModel;
 use app\modules\index\model\testModel;
 
-class indexController extends baseController {
+class indexController extends baseController
+{
 
     public $layout = 'index';
 
@@ -19,18 +19,21 @@ class indexController extends baseController {
         $res2 = testModel::db()->where('ttile3', 'test')
                         ->all();
         //var_dump($this->model('demo')->getSql()) ;
-        var_dump($res,$res2);exit;
+        var_dump($res, $res2);
+        exit;
 
         $res =  $this->display();
         var_dump($res);
     }
-    public function testAction($a){
+    public function testAction($a)
+    {
         echo $uri    = parse_url($_SERVER['REQUEST_URI']);
         echo '<img src="/test.jpg"><img src="/test.css"><img src="/test.ico">';
         var_dump($a);
     }
 
-    public function test2Action(){
+    public function test2Action()
+    {
         echo 'ddddddddddddddddd';
             $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         echo '<img src="/test.jpg"><img src="/test.css"><img src="/test.ico">';
@@ -41,9 +44,8 @@ class indexController extends baseController {
         $controller = empty($arr[2]) ? 'index' : $this->filter($arr[2]).'Controller';
         $action     = empty($arr[3]) ? 'index' : $this->filter($arr[3]).'Action';
 
-        var_dump($modules,$controller,$action);
+        var_dump($modules, $controller, $action);
          //var_dump(basename($uri));
-
     }
 
     /**
