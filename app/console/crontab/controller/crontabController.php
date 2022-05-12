@@ -1,9 +1,9 @@
 <?php
-namespace app\console\crontab;
+namespace app\console\crontab\controller;
 
 use rephp\crontab\client;
 
-class crontab
+class crontabController
 {
     public function runAction()
     {
