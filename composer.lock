@@ -72,16 +72,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.14.4",
+            "version": "2.14.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "f056f1fe935d9ed86e698905a957334029899895"
+                "reference": "a63e5e8f26ebbebf8ed3c5c691637325512eb0dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/f056f1fe935d9ed86e698905a957334029899895",
-                "reference": "f056f1fe935d9ed86e698905a957334029899895",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/a63e5e8f26ebbebf8ed3c5c691637325512eb0dc",
+                "reference": "a63e5e8f26ebbebf8ed3c5c691637325512eb0dc",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +131,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.14.4"
+                "source": "https://github.com/filp/whoops/tree/2.14.5"
             },
             "funding": [
                 {
@@ -139,7 +139,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-10-03T12:00:00+00:00"
+            "time": "2022-01-07T12:00:00+00:00"
         },
         {
             "name": "noahbuscher/macaw",
@@ -334,16 +334,16 @@
         },
         {
             "name": "rephp/framework",
-            "version": "1.1.63",
+            "version": "1.1.68",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/framework.git",
-                "reference": "4b018ec4bc5860f7a8aaba60b18b6d83d3526d03"
+                "reference": "a1591dbb875b1444d62ab23a64a527a2eed16e30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/framework/zipball/4b018ec4bc5860f7a8aaba60b18b6d83d3526d03",
-                "reference": "4b018ec4bc5860f7a8aaba60b18b6d83d3526d03",
+                "url": "https://api.github.com/repos/rephp/framework/zipball/a1591dbb875b1444d62ab23a64a527a2eed16e30",
+                "reference": "a1591dbb875b1444d62ab23a64a527a2eed16e30",
                 "shasum": ""
             },
             "require": {
@@ -360,12 +360,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "rephp\\": "./src/"
-                },
                 "files": [
                     "./src/helper/common.php"
-                ]
+                ],
+                "psr-4": {
+                    "rephp\\": "./src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -385,9 +385,9 @@
             ],
             "support": {
                 "issues": "https://github.com/rephp/framework/issues",
-                "source": "https://github.com/rephp/framework/tree/1.1.63"
+                "source": "https://github.com/rephp/framework/tree/1.1.68"
             },
-            "time": "2021-11-27T03:05:08+00:00"
+            "time": "2022-07-27T08:09:30+00:00"
         },
         {
             "name": "rephp/lib",
@@ -433,16 +433,16 @@
         },
         {
             "name": "rephp/redb",
-            "version": "1.1.17",
+            "version": "1.1.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/redb.git",
-                "reference": "848d0f5ecb8bbb77e667636e49dfa005497f536d"
+                "reference": "934f66f9f1e4bcf76c93ba710df2eed4d1415428"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/redb/zipball/848d0f5ecb8bbb77e667636e49dfa005497f536d",
-                "reference": "848d0f5ecb8bbb77e667636e49dfa005497f536d",
+                "url": "https://api.github.com/repos/rephp/redb/zipball/934f66f9f1e4bcf76c93ba710df2eed4d1415428",
+                "reference": "934f66f9f1e4bcf76c93ba710df2eed4d1415428",
                 "shasum": ""
             },
             "require": {
@@ -467,22 +467,22 @@
             "description": "redb是一款php的mysql数据库操作类库",
             "support": {
                 "issues": "https://github.com/rephp/redb/issues",
-                "source": "https://github.com/rephp/redb/tree/1.1.17"
+                "source": "https://github.com/rephp/redb/tree/1.1.24"
             },
-            "time": "2021-11-24T02:41:33+00:00"
+            "time": "2022-07-27T08:07:53+00:00"
         },
         {
             "name": "rephp/rephp-crontab",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/rephp-crontab.git",
-                "reference": "b7264d5c9213b2baef692c9f494bfa6c605fb859"
+                "reference": "2f726328312133199d5582a1790720480a5c669d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/rephp-crontab/zipball/b7264d5c9213b2baef692c9f494bfa6c605fb859",
-                "reference": "b7264d5c9213b2baef692c9f494bfa6c605fb859",
+                "url": "https://api.github.com/repos/rephp/rephp-crontab/zipball/2f726328312133199d5582a1790720480a5c669d",
+                "reference": "2f726328312133199d5582a1790720480a5c669d",
                 "shasum": ""
             },
             "require": {
@@ -507,9 +507,9 @@
             "description": "crontab统一管理",
             "support": {
                 "issues": "https://github.com/rephp/rephp-crontab/issues",
-                "source": "https://github.com/rephp/rephp-crontab/tree/1.0.5"
+                "source": "https://github.com/rephp/rephp-crontab/tree/1.0.6"
             },
-            "time": "2021-12-17T06:58:03+00:00"
+            "time": "2021-12-22T09:35:40+00:00"
         },
         {
             "name": "rephp/rephp-debugbar",

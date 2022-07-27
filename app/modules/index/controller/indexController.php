@@ -12,14 +12,15 @@ class indexController extends baseController
 
     public function indexAction()
     {
-        echo '==========================';
+        echo '==============22============';
         //var_dump(demoModel::db());exit;
         $res = demoModel::db()->where('ttile', '版本包')
                               ->fetch();
         $res2 = testModel::db()->where('ttile3', 'test')
                         ->all();
+        $res3 = testModel::getTableName();
         //var_dump($this->model('demo')->getSql()) ;
-        var_dump($res, $res2);
+        var_dump($res, $res2, $res3);
         exit;
 
         $res =  $this->display();
