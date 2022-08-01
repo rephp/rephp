@@ -2,8 +2,9 @@
 namespace app\console\crontab\controller;
 
 use rephp\crontab\client;
+use app\console\baseController;
 
-class crontabController
+class crontabController extends baseController
 {
     public function runAction()
     {

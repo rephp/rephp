@@ -1,7 +1,9 @@
 <?php
 namespace app\console\member\controller;
 
-class testController
+use app\console\baseController;
+
+class testController extends baseController
 {
 
     public function test2Action()
