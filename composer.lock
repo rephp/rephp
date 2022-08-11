@@ -334,16 +334,16 @@
         },
         {
             "name": "rephp/framework",
-            "version": "1.1.68",
+            "version": "1.1.70",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/framework.git",
-                "reference": "a1591dbb875b1444d62ab23a64a527a2eed16e30"
+                "reference": "4c97244e39277ab2517faf18e83f79e23a109be5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/framework/zipball/a1591dbb875b1444d62ab23a64a527a2eed16e30",
-                "reference": "a1591dbb875b1444d62ab23a64a527a2eed16e30",
+                "url": "https://api.github.com/repos/rephp/framework/zipball/4c97244e39277ab2517faf18e83f79e23a109be5",
+                "reference": "4c97244e39277ab2517faf18e83f79e23a109be5",
                 "shasum": ""
             },
             "require": {
@@ -385,9 +385,9 @@
             ],
             "support": {
                 "issues": "https://github.com/rephp/framework/issues",
-                "source": "https://github.com/rephp/framework/tree/1.1.68"
+                "source": "https://github.com/rephp/framework/tree/1.1.70"
             },
-            "time": "2022-07-27T08:09:30+00:00"
+            "time": "2022-08-11T08:23:09+00:00"
         },
         {
             "name": "rephp/lib",
