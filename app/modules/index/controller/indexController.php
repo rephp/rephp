@@ -1,7 +1,7 @@
 <?php
 namespace app\modules\index\controller;
 
-use app\modules\index\baseController;
+use app\common\baseController;
 use app\modules\index\model\demoModel;
 use app\modules\index\model\testModel;
 

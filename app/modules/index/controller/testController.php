@@ -1,10 +1,11 @@
 <?php
 namespace app\modules\index\controller;
 
+use app\common\baseController;
 use app\modules\index\logic\testLogic;
 use rephp\component\container\container;
 
-class testController
+class testController extends baseController
 {
 
     public function indexAction()
