@@ -12,9 +12,18 @@ class indexController extends baseController
 
     public function indexAction()
     {
-        echo '==============22============';
+        echo '==============2012============';
         //var_dump(demoModel::db());exit;
-        $res = demoModel::db()->where('ttile', '版本包')
+        $trans = demoModel::startTrans();
+        try{
+            demoModel::updates(['id'=>5], ['ttile'=>'版本包2225']);
+            demoModel::updates(['id'=>16], ['ttile'=>'3333']);
+            $trans->commit();
+        }catch (\Exception $e){
+            $trans->rollBack();
+        }
+
+        $res = demoModel::db()->where('id', 5)
                               ->fetch();
         $res2 = testModel::db()->where('ttile3', 'test')
                         ->all();
