@@ -7,70 +7,6 @@
     "content-hash": "e22b00571bfd84759e830ddddf7ed080",
     "packages": [
         {
-            "name": "catfan/medoo",
-            "version": "v1.7.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/catfan/Medoo.git",
-                "reference": "2d675f73e23f63bbaeb9a8aa33318659a3d3c32f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/catfan/Medoo/zipball/2d675f73e23f63bbaeb9a8aa33318659a3d3c32f",
-                "reference": "2d675f73e23f63bbaeb9a8aa33318659a3d3c32f",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pdo": "*",
-                "php": ">=5.4"
-            },
-            "suggest": {
-                "ext-pdo_dblib": "For MSSQL or Sybase database on Linux/UNIX platform",
-                "ext-pdo_mysql": "For MySQL or MariaDB database",
-                "ext-pdo_oci": "For Oracle database",
-                "ext-pdo_oci8": "For Oracle version 8 database",
-                "ext-pdo_pqsql": "For PostgreSQL database",
-                "ext-pdo_sqlite": "For SQLite database",
-                "ext-pdo_sqlsrv": "For MSSQL database on both Window/Liunx platform"
-            },
-            "type": "framework",
-            "autoload": {
-                "psr-4": {
-                    "Medoo\\": "/src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Angel Lai",
-                    "email": "angel@catfan.me"
-                }
-            ],
-            "description": "The lightweight PHP database framework to accelerate development",
-            "homepage": "https://medoo.in",
-            "keywords": [
-                "database",
-                "database library",
-                "lightweight",
-                "mariadb",
-                "mssql",
-                "mysql",
-                "oracle",
-                "php framework",
-                "postgresql",
-                "sql",
-                "sqlite"
-            ],
-            "support": {
-                "issues": "https://github.com/catfan/Medoo/issues",
-                "source": "https://github.com/catfan/Medoo"
-            },
-            "time": "2020-02-11T08:20:42+00:00"
-        },
-        {
             "name": "filp/whoops",
             "version": "2.14.5",
             "source": {
@@ -334,20 +270,19 @@
         },
         {
             "name": "rephp/framework",
-            "version": "1.1.71",
+            "version": "1.1.72",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/framework.git",
-                "reference": "e3ef9eafde621357c44f5beec99778521471bbd8"
+                "reference": "3268e589858c2e647102386da802a0838dc87b85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/framework/zipball/e3ef9eafde621357c44f5beec99778521471bbd8",
-                "reference": "e3ef9eafde621357c44f5beec99778521471bbd8",
+                "url": "https://api.github.com/repos/rephp/framework/zipball/3268e589858c2e647102386da802a0838dc87b85",
+                "reference": "3268e589858c2e647102386da802a0838dc87b85",
                 "shasum": ""
             },
             "require": {
-                "catfan/medoo": "^1.7",
                 "filp/whoops": "^2.9",
                 "noahbuscher/macaw": "dev-master",
                 "psr/container": "^1.0",
@@ -385,9 +320,9 @@
             ],
             "support": {
                 "issues": "https://github.com/rephp/framework/issues",
-                "source": "https://github.com/rephp/framework/tree/1.1.71"
+                "source": "https://github.com/rephp/framework/tree/1.1.72"
             },
-            "time": "2022-08-24T04:24:24+00:00"
+            "time": "2022-08-24T04:30:01+00:00"
         },
         {
             "name": "rephp/lib",
