@@ -1,7 +1,8 @@
 <?php
+
 namespace app\common;
 
-use \rephp\core\controller;
+use rephp\core\controller;
 
 /**
  * 基类
@@ -9,5 +10,4 @@ use \rephp\core\controller;
  */
 class baseController extends controller
 {
-
 }

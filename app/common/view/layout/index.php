@@ -1,4 +1,5 @@
 <?php
+
 echo 'index';
 \rephp\core\view::loadPart('top.php');
 

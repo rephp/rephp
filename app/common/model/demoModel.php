@@ -1,7 +1,8 @@
 <?php
+
 namespace app\common\model;
 
-use \rephp\core\model;
+use rephp\core\model;
 
 class demoModel extends model
 {
