@@ -14,6 +14,7 @@ class indexController extends baseController
     {
         echo '==============2012============';
         //var_dump(demoModel::db());exit;
+        var_dump(get(),$_REQUEST);exit;
         $trans = demoModel::startTrans();
         try {
             demoModel::updates(['id' => 5], ['ttile' => '版本包2225']);
