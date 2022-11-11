@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "filp/whoops",
-            "version": "2.14.5",
+            "version": "2.14.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "a63e5e8f26ebbebf8ed3c5c691637325512eb0dc"
+                "reference": "f7948baaa0330277c729714910336383286305da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/a63e5e8f26ebbebf8ed3c5c691637325512eb0dc",
-                "reference": "a63e5e8f26ebbebf8ed3c5c691637325512eb0dc",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/f7948baaa0330277c729714910336383286305da",
+                "reference": "f7948baaa0330277c729714910336383286305da",
                 "shasum": ""
             },
             "require": {
@@ -67,7 +67,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.14.5"
+                "source": "https://github.com/filp/whoops/tree/2.14.6"
             },
             "funding": [
                 {
@@ -75,7 +75,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-01-07T12:00:00+00:00"
+            "time": "2022-11-02T16:23:29+00:00"
         },
         {
             "name": "noahbuscher/macaw",
@@ -270,16 +270,16 @@
         },
         {
             "name": "rephp/framework",
-            "version": "1.1.74",
+            "version": "1.1.75",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/framework.git",
-                "reference": "275f9c6f70fe72b036a74dc9ac30facaa2b0f123"
+                "reference": "27632235469b3c5d1e400a18bf9dea914d652b2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/framework/zipball/275f9c6f70fe72b036a74dc9ac30facaa2b0f123",
-                "reference": "275f9c6f70fe72b036a74dc9ac30facaa2b0f123",
+                "url": "https://api.github.com/repos/rephp/framework/zipball/27632235469b3c5d1e400a18bf9dea914d652b2f",
+                "reference": "27632235469b3c5d1e400a18bf9dea914d652b2f",
                 "shasum": ""
             },
             "require": {
@@ -320,9 +320,9 @@
             ],
             "support": {
                 "issues": "https://github.com/rephp/framework/issues",
-                "source": "https://github.com/rephp/framework/tree/1.1.74"
+                "source": "https://github.com/rephp/framework/tree/1.1.75"
             },
-            "time": "2022-10-26T07:47:52+00:00"
+            "time": "2022-11-11T08:56:07+00:00"
         },
         {
             "name": "rephp/lib",
