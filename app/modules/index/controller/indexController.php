@@ -31,10 +31,10 @@ class indexController extends baseController
         $res3 = testModel::getTableName();
         //var_dump($this->model('demo')->getSql()) ;
         var_dump($res, $res2, $res3);
-        exit;
 
-        $res = $this->display();
-        var_dump($res);
+
+        return  $this->display();
+
     }
 
     public function testAction($a)
