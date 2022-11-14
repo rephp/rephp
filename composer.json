@@ -11,7 +11,8 @@
         "php": ">=5.4.0",
         "rephp/lib": "^1.0",
         "rephp/framework": "^1.1",
-        "rephp/rephp-crontab": "^1.0"
+        "rephp/rephp-crontab": "^1.0",
+        "elasticsearch/elasticsearch": "^7.17"
     },
     "autoload": {
         "files": [
