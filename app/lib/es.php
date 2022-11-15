@@ -224,7 +224,17 @@ class es
         return $this->getClient()->mget($params);
     }
 
-    public function search($indexName, $keyword, $page = 1, $size = 20, $highlightColumnArr = [], $highlightPreTags = '', $highlightPostTags = '')
+    /**
+     * @param string $indexName          索引名字
+     * @param array  $query              查询数组
+     * @param int    $page               当前页数
+     * @param int    $size               每页多少条数据
+     * @param array  $highlightColumnArr 高亮字段
+     * @param string $highlightPreTags   高亮开始字符串
+     * @param string $highlightPostTags  高亮结尾字符串
+     * @return array|callable
+     */
+    public function search($indexName, array $query, $page = 1, $size = 20, $highlightColumnArr = [], $highlightPreTags = '', $highlightPostTags = '')
     {
         //偏移量
         $size = (int)$size;
@@ -251,15 +261,12 @@ class es
             'from'    => $offset,
             'body'    => [
                 //查询内容
-                'query'     => [
-                    'match' => [//匹配
-                                'goods_name' => $word//匹配字段
-                    ],
-                ],
+                'query'     => $query,
                 'highlight' => $highlightConfig,
             ],
         ];
 
         return $this->getClient()->search($params);
     }
+
 }
