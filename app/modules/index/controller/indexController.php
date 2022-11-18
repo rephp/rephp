@@ -5,6 +5,7 @@ namespace app\modules\index\controller;
 use app\common\baseController;
 use app\modules\index\model\demoModel;
 use app\modules\index\model\testModel;
+use app\lib\es;
 
 class indexController extends baseController
 {
@@ -12,7 +13,65 @@ class indexController extends baseController
 
     public function indexAction()
     {
-        echo '==============2012============';
+        echo '====e==========2012============';
+        $es = new es();
+        /*$res = $es->createIndex('test2');
+        var_dump($res);
+        $columnList = [
+            'id' => [
+                'type' => 'integer',
+            ],
+            'title' => [
+                'type'=> 'text',
+            ],
+            'content' => [
+                'type'=> 'text',
+            ],
+            'tags' => [
+                'type' => 'text',
+                'fields' => [
+                    'keyword' => [
+                        'type' => 'keyword',
+                        'ignore_above' => 256,
+                    ],
+                ],
+            ],
+        ];
+
+        $res = $es->createMapping('test2', $columnList);
+        var_dump($res);exit;
+        $res = $es->getMapping('test2');
+        print_r($res);*/
+//        $columnList = [
+//            'id' => [
+//                'type' => 'integer', // 整型
+//            ],
+//            'title' => [
+//                'type' => 'text', // 字符串型
+//            ],
+//            'content' => [
+//                'type' => 'text',
+//            ],
+//        ];
+//        $res = $es->createMapping('test' , $columnList);
+//        $res = $es->addDoc('test', ['title'=>'test title', 'tags'=>'test1,test2,test3']);
+//        $res2 = $es->addDoc('test', ['title'=>'aaaaa title', 'tags'=>'aaaaa tags']);
+//        var_dump($res, $res2);exit;
+        //$res = $es->getMapping('test');
+        $query =  [
+            'constant_score' => [ //非评分模式执行
+                                  'filter' => [ //过滤器，不会计算相关度，速度快
+                                                'term' => [ //精确查找，不支持多个条件
+                                                            'title' => 'title'
+                                                ]
+                                  ]
+            ]
+        ];
+
+        $res = $es->search('test', $query, 1, 111, ['title']);
+echo '<pre>';
+        print_r($res);
+        exit;
         //var_dump(demoModel::db());exit;
         var_dump(get());
         $trans = demoModel::startTrans();

@@ -12,8 +12,8 @@ class es
 {
     protected $client;
     protected $lastConnectTime = 0;
-    protected $timeout         = 30;
-    protected $connectTimeout  = 1800;
+    protected $timeout;
+    protected $connectTimeout;
 
     /**
      * 获取es客户端
@@ -38,8 +38,8 @@ class es
             }
             $this->client          = ClientBuilder::create()->setHosts($connectArr)->build();
             $this->lastConnectTime = time();
-            $this->timeout         = empty($config['timeout']) ? 30 : $config['timeout'];
-            $this->connectTimeout  = empty($config['connect_timeout']) ? 1800 : $config['connect_timeout'];
+            $this->timeout         = empty($config['timeout']) ? '30s' : $config['timeout'];
+            $this->connectTimeout  = empty($config['connect_timeout']) ? '60s' : $config['connect_timeout'];
         }
 
         return $this->client;
@@ -117,10 +117,8 @@ class es
             'index'   => $indexName,
             'timeout' => $this->timeout,
             'body'    => [
-                'mytype' => [
-                    '_source'    => $source,
-                    'properties' => $columnList,
-                ],
+                '_source'    => $source,
+                'properties' => $columnList,
             ],
         ];
         $this->getClient()->indices()->putMapping($params);
@@ -261,10 +259,10 @@ class es
             'from'    => $offset,
             'body'    => [
                 //查询内容
-                'query'     => $query,
-                'highlight' => $highlightConfig,
+                'query' => $query,
             ],
         ];
+        empty($highlightConfig) || $params['body']['highlight'] = $highlightConfig;
 
         return $this->getClient()->search($params);
     }
