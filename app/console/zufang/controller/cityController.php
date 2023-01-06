@@ -4,11 +4,11 @@ namespace app\console\zufang\controller;
 
 use app\console\baseController;
 
-class baoanController extends baseController
+class cityController extends baseController
 {
     public function runAction()
     {
-        $file = ROOT_PATH.'runtime/data/baoan.txt';
+        $file = ROOT_PATH.'runtime/data/city.txt';
         $tip_start_time = file_exists($file) ? file_get_contents($file) : '2022-12-12 18:18:54';
         $tip_start_time = strtotime($tip_start_time);
         //过滤开始时间
@@ -44,8 +44,6 @@ class baoanController extends baseController
             $this->alert_me($item['title'].'-'.date('Y-m-d H:i:s', $item['publish_time']));
         }
         empty($max_current_time) || file_put_contents($file, date('Y-m-d H:i:s', $max_current_time));
-
-        exit('ok');
     }
 
 

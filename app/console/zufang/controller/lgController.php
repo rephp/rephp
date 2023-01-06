@@ -4,25 +4,18 @@ namespace app\console\zufang\controller;
 
 use app\console\baseController;
 
-class baoanController extends baseController
+class lgController extends baseController
 {
     public function runAction()
     {
-        $file = ROOT_PATH.'runtime/data/baoan.txt';
-        $tip_start_time = file_exists($file) ? file_get_contents($file) : '2022-12-12 18:18:54';
+        $file = ROOT_PATH.'runtime/data/lg.txt';
+        $tip_start_time = file_exists($file) ? file_get_contents($file) : '2022-12-26 10:18:54';
         $tip_start_time = strtotime($tip_start_time);
         //过滤开始时间
-        $content = $this->http_curl('http://www.baoan.gov.cn/bajshej/gkmlpt/search?keywords=宝安区户籍公共租赁&order=1&position=title');
-        preg_match('/SID:(.*?)ENV/is', $content, $objStr);    //匹配span标签里面的内容
-        if (empty($objStr[1])) {
-            $this->alert_me('查不到sid');
-        }
+        $siteId = 755166;
         //组装jsonp数据源
-        $res      = substr(trim($objStr[1]), 0, -1);
-        $res      = str_replace('\'', '', $res);
-        $res      = str_replace('"', '', $res);
-        $callback = 'jQuery08422707778939609_' . time() . '771';
-        $url2     = 'https://search.gd.gov.cn/jsonp/site/' . $res . '?callback=' . $callback . '&page=1&pagesize=6&isgkml=1&text=%E5%AE%9D%E5%AE%89&order=1&including_url_doc=1&including_attach_doc=1&classify_main_name=&classify_main=&position=title&is_expired=&is_abolished=&is_abolished_or_is_expired=false&_=' . time() . '772';
+        $callback = 'jQuery08422707778939609_' . time() . '815';
+        $url2     = 'https://search.gd.gov.cn/jsonp/site/' . $siteId . '?callback=' . $callback . '&page=1&pagesize=6&isgkml=1&text=%E7%A7%9F%E8%B5%81&order=1&including_url_doc=1&including_attach_doc=1&classify_main_name=&classify_main=&position=title&is_expired=&is_abolished=&is_abolished_or_is_expired=false&_=' . time() . '816';
         $content  = $this->http_curl($url2);
         $list     = $this->jsonp_decode($content, true);
         if (empty($list['results'])) {
