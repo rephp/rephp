@@ -36,7 +36,7 @@ class szController extends baseController
                 $max_current_time = $current_time;
             }
             //提醒
-            $this->alert_me($title.'-'.date('Y-m-d', $current_time));
+            $this->alert_me($title.'-'.date('Y-m-d', $current_time).'-sz');
         }
         empty($max_current_time) || file_put_contents($file, date('Y-m-d H:i:s', $max_current_time));
 

@@ -41,7 +41,7 @@ class baoanController extends baseController
                 $max_current_time = $current_time;
             }
             //提醒
-            $this->alert_me($item['title'].'-'.date('Y-m-d H:i:s', $item['publish_time']));
+            $this->alert_me($item['title'].'-'.date('Y-m-d H:i:s', $item['publish_time']).'-baoan');
         }
         empty($max_current_time) || file_put_contents($file, date('Y-m-d H:i:s', $max_current_time));
 

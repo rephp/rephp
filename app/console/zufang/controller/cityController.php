@@ -9,7 +9,7 @@ class cityController extends baseController
     public function runAction()
     {
         $file = ROOT_PATH.'runtime/data/city.txt';
-        $tip_start_time = file_exists($file) ? file_get_contents($file) : '2022-12-12 18:18:54';
+        $tip_start_time = file_exists($file) ? file_get_contents($file) : '2022-12-01 18:18:54';
         $tip_start_time = strtotime($tip_start_time);
         $siteId = 755029;
 
@@ -34,7 +34,7 @@ class cityController extends baseController
             }
 
             //提醒
-            $this->alert_me($item['title'].'-'.date('Y-m-d H:i:s', $item['publish_time']));
+            $this->alert_me($item['title'].'-'.date('Y-m-d H:i:s', $item['publish_time']).'-city');
         }
         empty($max_current_time) || file_put_contents($file, date('Y-m-d H:i:s', $max_current_time));
     }
