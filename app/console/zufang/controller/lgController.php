@@ -19,7 +19,7 @@ class lgController extends baseController
         $content  = $this->http_curl($url2);
         $list     = $this->jsonp_decode($content, true);
         if (empty($list['results'])) {
-            $this->alert_me('查不到jsonp');
+            $this->alert_me('lg查不到jsonp');
         }
 
         $max_current_time = 0;

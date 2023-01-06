@@ -4,39 +4,43 @@ namespace app\console\zufang\controller;
 
 use app\console\baseController;
 
-class cityController extends baseController
+class szController extends baseController
 {
     public function runAction()
     {
-        $file = ROOT_PATH.'runtime/data/city.txt';
-        $tip_start_time = file_exists($file) ? file_get_contents($file) : '2022-12-12 18:18:54';
+        $file = ROOT_PATH.'runtime/data/sz.txt';
+        $tip_start_time = file_exists($file) ? file_get_contents($file) : '2022-12-30 18:18:54';
         $tip_start_time = strtotime($tip_start_time);
-        $siteId = 755029;
-
-        $callback = 'jQuery05806395369859823_' . time() . '528';
-        $url2     = 'https://search.gd.gov.cn/jsonp/site/' . $siteId . '?callback=' . $callback . '&page=1&pagesize=6&isgkml=1&text=%E5%AE%9D%E5%AE%89&order=1&including_url_doc=1&including_attach_doc=1&classify_main_name=&classify_main=&position=title&is_expired=&is_abolished=&is_abolished_or_is_expired=false&_=' . time() . '529';
-        $content  = $this->http_curl($url2);
-        $list     = $this->jsonp_decode($content, true);
-        if (empty($list['results'])) {
-            $this->alert_me('city查不到jsonp');
+        //过滤开始时间
+        $content = $this->http_curl('http://zjj.sz.gov.cn/ztfw/zfbz/tzgg2017/index.html');
+        preg_match('/<ul class=\"ftdt-list\">(.*?)<\/ul>/is', $content, $objStr);    //匹配ul标签里面的内容
+        if (empty($objStr[1])) {
+            $this->alert_me('sz查不到目标区域');
         }
+        preg_match_all('/title="(.*?)"/is', $objStr[1], $titleArr);    //匹配li>title
+        $titleArr = empty($titleArr[1]) ? [] : $titleArr[1];
+        preg_match_all('/<span>(.*?)<\/span>(.*?)<\/li>/is', $objStr[1], $timeArr);
+        $timeArr = empty($timeArr[1]) ? [] : $timeArr[1];
         $max_current_time = 0;
-
         //匹配信息，如有符合则直接推送结果提示
-        foreach ($list['results'] as $item) {
+        foreach ($titleArr as $index=>$title) {
+            if(empty($timeArr[$index])){
+                continue;
+            }
             //过滤开始时间
-            $current_time = strtotime(date('Y-m-d H:i:s', $item['publish_time']));
+            $current_time = strtotime($timeArr[$index]);
             if ($tip_start_time >= $current_time) {
                 continue;
             }
             if($max_current_time<$current_time){
                 $max_current_time = $current_time;
             }
-
             //提醒
-            $this->alert_me($item['title'].'-'.date('Y-m-d H:i:s', $item['publish_time']));
+            $this->alert_me($title.'-'.date('Y-m-d', $current_time));
         }
         empty($max_current_time) || file_put_contents($file, date('Y-m-d H:i:s', $max_current_time));
+
+        exit('ok');
     }
 
 

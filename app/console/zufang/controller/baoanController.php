@@ -15,7 +15,7 @@ class baoanController extends baseController
         $content = $this->http_curl('http://www.baoan.gov.cn/bajshej/gkmlpt/search?keywords=宝安区户籍公共租赁&order=1&position=title');
         preg_match('/SID:(.*?)ENV/is', $content, $objStr);    //匹配span标签里面的内容
         if (empty($objStr[1])) {
-            $this->alert_me('查不到sid');
+            $this->alert_me('baoan查不到sid');
         }
         //组装jsonp数据源
         $res      = substr(trim($objStr[1]), 0, -1);
@@ -26,7 +26,7 @@ class baoanController extends baseController
         $content  = $this->http_curl($url2);
         $list     = $this->jsonp_decode($content, true);
         if (empty($list['results'])) {
-            $this->alert_me('查不到jsonp');
+            $this->alert_me('baoan查不到jsonp');
         }
 
         $max_current_time = 0;
