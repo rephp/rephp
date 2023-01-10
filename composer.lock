@@ -124,16 +124,16 @@
         },
         {
             "name": "ezimuel/ringphp",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezimuel/ringphp.git",
-                "reference": "8d00384f9e5c04713ef8448adf47824265791b50"
+                "reference": "7887fc8488013065f72f977dcb281994f5fde9f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezimuel/ringphp/zipball/8d00384f9e5c04713ef8448adf47824265791b50",
-                "reference": "8d00384f9e5c04713ef8448adf47824265791b50",
+                "url": "https://api.github.com/repos/ezimuel/ringphp/zipball/7887fc8488013065f72f977dcb281994f5fde9f4",
+                "reference": "7887fc8488013065f72f977dcb281994f5fde9f4",
                 "shasum": ""
             },
             "require": {
@@ -175,9 +175,9 @@
             ],
             "description": "Fork of guzzle/RingPHP (abandoned) to be used with elasticsearch-php",
             "support": {
-                "source": "https://github.com/ezimuel/ringphp/tree/1.2.1"
+                "source": "https://github.com/ezimuel/ringphp/tree/1.2.2"
             },
-            "time": "2022-10-25T12:54:22+00:00"
+            "time": "2022-12-07T11:28:53+00:00"
         },
         {
             "name": "filp/whoops",
@@ -519,16 +519,16 @@
         },
         {
             "name": "rephp/framework",
-            "version": "1.1.75",
+            "version": "1.1.76",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rephp/framework.git",
-                "reference": "27632235469b3c5d1e400a18bf9dea914d652b2f"
+                "reference": "ed77b41fa78e38a1f5af27da31e44b5d61ee0f5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rephp/framework/zipball/27632235469b3c5d1e400a18bf9dea914d652b2f",
-                "reference": "27632235469b3c5d1e400a18bf9dea914d652b2f",
+                "url": "https://api.github.com/repos/rephp/framework/zipball/ed77b41fa78e38a1f5af27da31e44b5d61ee0f5e",
+                "reference": "ed77b41fa78e38a1f5af27da31e44b5d61ee0f5e",
                 "shasum": ""
             },
             "require": {
@@ -569,9 +569,9 @@
             ],
             "support": {
                 "issues": "https://github.com/rephp/framework/issues",
-                "source": "https://github.com/rephp/framework/tree/1.1.75"
+                "source": "https://github.com/rephp/framework/tree/1.1.76"
             },
-            "time": "2022-11-11T08:56:07+00:00"
+            "time": "2023-01-10T01:48:05+00:00"
         },
         {
             "name": "rephp/lib",
