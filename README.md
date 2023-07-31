@@ -2,6 +2,10 @@
 需要环境：
 php >= 7.2 
 
+执行命令：
+composer create-project rephp/rephp .
+
+
 服务器配置
 
 定时器新增配置可以实现git自动pull
