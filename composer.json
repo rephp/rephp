@@ -31,7 +31,9 @@
     "prefer-stable": true,
     "scripts": {
         "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@php -r \"file_exists('./config/database.php') || copy('./vendor/rephp/redb/src/config/database.php', './config/database.php');\""
+        
         ],
         "post-create-project-cmd": [
             "@php cmd project->init"
