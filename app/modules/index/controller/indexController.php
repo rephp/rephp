@@ -2,10 +2,10 @@
 
 namespace app\modules\index\controller;
 
-use app\common\baseController;
+use app\lib\es;
+use app\modules\baseController;
 use app\modules\index\model\demoModel;
 use app\modules\index\model\testModel;
-use app\lib\es;
 
 class indexController extends baseController
 {

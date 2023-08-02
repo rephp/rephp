@@ -2,8 +2,7 @@
 
 namespace app\modules\index\controller;
 
-use app\common\baseController;
-use app\modules\index\logic\testLogic;
+use app\modules\baseController;
 use rephp\component\container\container;
 
 class testController extends baseController

@@ -1,6 +1,6 @@
 <?php
 
-namespace app\common;
+namespace app\modules;
 
 use rephp\core\controller;
 

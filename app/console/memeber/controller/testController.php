@@ -1,7 +1,6 @@
 <?php
 
-namespace app\console\member\controller;
-
+namespace app\console\memeber\controller;
 use app\console\baseController;
 
 class testController extends baseController

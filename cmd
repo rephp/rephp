@@ -1,5 +1,7 @@
 #!/usr/bin/env php
 <?php
+ini_set("display_errors", On);
+ini_set("error_reporting", E_ALL);
 use rephp\app;
 $uri = $argv[1];
 in_array(substr($uri,0,1), ['/', '\\']) || $uri = '/'.$uri;
