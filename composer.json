@@ -40,6 +40,7 @@
             "@php -r \"file_exists('./app/console/swoole/logic/demoLogic.php') || ( file_exists('./vendor/rephp/rephp-swoole/src/app/console/swoole/logic/demoLogic.php') && copy('./vendor/rephp/rephp-swoole/src/app/console/swoole/logic/demoLogic.php', './app/console/swoole/logic/demoLogic.php') );\"",
             "@php -r \"file_exists('./app/console/swoole/logic/websocketLogic.php') || ( file_exists('./vendor/rephp/rephp-swoole/src/app/console/swoole/logic/websocketLogic.php') && copy('./vendor/rephp/rephp-swoole/src/app/console/swoole/logic/websocketLogic.php', './app/console/swoole/logic/websocketLogic.php') );\"",
             "@php -r \"file_exists('./app/console/swoole/controller/websocketController.php') || ( file_exists('./vendor/rephp/rephp-swoole/src/app/console/swoole/controller/websocketController.php') && copy('./vendor/rephp/rephp-swoole/src/app/console/swoole/controller/websocketController.php', './app/console/swoole/controller/websocketController.php') );\"",
+            "@php -r \"file_exists('./app/console/swoole/baseController.php') || ( file_exists('./vendor/rephp/rephp-swoole/src/app/console/swoole/baseController.php') && copy('./vendor/rephp/rephp-swoole/src/app/console/swoole/baseController.php', './app/console/swoole/baseController.php') );\"",
             "@php -r \"file_exists('./config/swoole.php') || (file_exists('./vendor/rephp/rephp-swoole/src/config/swoole.php') && copy('./vendor/rephp/rephp-swoole/src/config/swoole.php', './config/swoole.php'));\""
         ]
     }
