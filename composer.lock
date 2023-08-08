@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c965d9ec5808dffc01b41c979e109bb0",
+    "content-hash": "a548471ad0d4ebbfaaf547ccac73013a",
     "packages": [
         {
             "name": "elasticsearch/elasticsearch",
@@ -734,6 +734,46 @@
                 "source": "https://github.com/rephp/rephp-debugbar/tree/1.1.12"
             },
             "time": "2021-11-23T10:18:04+00:00"
+        },
+        {
+            "name": "rephp/rephp-swoole",
+            "version": "1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rephp/rephp-swoole.git",
+                "reference": "350064598c3aea013bd778a56305d5b27b7f39aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rephp/rephp-swoole/zipball/350064598c3aea013bd778a56305d5b27b7f39aa",
+                "reference": "350064598c3aea013bd778a56305d5b27b7f39aa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "rephp\\swoole\\": "./src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "sam.shi",
+                    "email": "32320811@qq.com"
+                }
+            ],
+            "description": "rephp框架的swoole扩展",
+            "support": {
+                "issues": "https://github.com/rephp/rephp-swoole/issues",
+                "source": "https://github.com/rephp/rephp-swoole/tree/1.0.7"
+            },
+            "time": "2023-08-08T03:33:58+00:00"
         }
     ],
     "packages-dev": [],

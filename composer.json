@@ -12,7 +12,8 @@
         "rephp/lib": "^1.0",
         "rephp/framework": "^1.1",
         "rephp/rephp-crontab": "^1.0",
-        "elasticsearch/elasticsearch": "^7.17"
+        "elasticsearch/elasticsearch": "^7.17",
+        "rephp/rephp-swoole": "^1.0"
     },
     "autoload": {
         "files": [
@@ -35,12 +36,7 @@
             "@php -r \"file_exists('./config/database.php') || copy('./vendor/rephp/redb/src/config/database.php', './config/database.php');\""
         ],
 		"post-package-install": [
-            "@php -r \"is_dir('./vendor/rephp/rephp-swoole/src/app/console/swoole') && mkdir('./app/console/swoole/controller', 755, 1);\"",
-            "@php -r \"is_dir('./vendor/rephp/rephp-swoole/src/app/console/swoole') && mkdir('./app/console/swoole/logic', 755, 1);\"",
-            "@php -r \"file_exists('./app/console/swoole/logic/demoLogic.php') || ( file_exists('./vendor/rephp/rephp-swoole/src/app/console/swoole/logic/demoLogic.php') && copy('./vendor/rephp/rephp-swoole/src/app/console/swoole/logic/demoLogic.php', './app/console/swoole/logic/demoLogic.php') );\"",
-            "@php -r \"file_exists('./app/console/swoole/logic/websocketLogic.php') || ( file_exists('./vendor/rephp/rephp-swoole/src/app/console/swoole/logic/websocketLogic.php') && copy('./vendor/rephp/rephp-swoole/src/app/console/swoole/logic/websocketLogic.php', './app/console/swoole/logic/websocketLogic.php') );\"",
-            "@php -r \"file_exists('./app/console/swoole/controller/websocketController.php') || ( file_exists('./vendor/rephp/rephp-swoole/src/app/console/swoole/controller/websocketController.php') && copy('./vendor/rephp/rephp-swoole/src/app/console/swoole/controller/websocketController.php', './app/console/swoole/controller/websocketController.php') );\"",
-            "@php -r \"file_exists('./app/console/swoole/baseController.php') || ( file_exists('./vendor/rephp/rephp-swoole/src/app/console/swoole/baseController.php') && copy('./vendor/rephp/rephp-swoole/src/app/console/swoole/baseController.php', './app/console/swoole/baseController.php') );\"",
+            "@php -r \"is_dir('./vendor/rephp/rephp-swoole/src/app/console/swoole') && ( is_dir('./app/console/swoole') || rename('./vendor/rephp/rephp-swoole/src/app/console/swoole', './app/console/swoole') );\"",
             "@php -r \"file_exists('./config/swoole.php') || (file_exists('./vendor/rephp/rephp-swoole/src/config/swoole.php') && copy('./vendor/rephp/rephp-swoole/src/config/swoole.php', './config/swoole.php'));\""
         ]
     }
